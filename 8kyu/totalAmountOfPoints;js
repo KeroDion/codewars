@@ -1,0 +1,15 @@
+function points(games) {
+  let counter = 0
+  let arr = []
+  for(let i = 0; i < games.length; i++){
+    arr = games[i].split(':')
+    if(arr[0] > arr[1]){
+      counter += 3
+    }if(arr[0] === arr[1]){
+      counter++
+    }
+    arr = []
+    
+  }
+  return counter
+}
