@@ -9,6 +9,8 @@ function high(x){
       const word = words[i];
       //Work through the letters of the single word and sum up the score into the num[i] place of the num array
       for (let j = 0; j < word.length; ++j) {
+        //returns the decimal number from every letter in the word.
+        // char 'a' starts with decimal number 97, so - 96 to have correct point system
         num[i] += word.charCodeAt(j) - 96;
       }
     }
