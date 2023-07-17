@@ -1,0 +1,14 @@
+function gimme (triplet) {
+  let min = Math.min(...triplet);
+  let max = Math.max(...triplet);
+  let middle = 0;
+  for(let i = 0; i < triplet.length; i++)
+    {
+      if(triplet[i] != min && triplet[i] != max)
+        {
+          middle = triplet[i]
+        }
+    }
+      
+   return triplet.indexOf(middle)
+}
